@@ -59,8 +59,8 @@ router.post("/login", (req, res) => {
 function getJwtToken(username) {
   const payload = {
    
-  // this will probably cfrom the database
-   
+  // this will probably come from the database
+  
    username,
     // department: "sales",
   };

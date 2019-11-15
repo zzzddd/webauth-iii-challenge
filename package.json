@@ -4,7 +4,7 @@
   "description": "## Topics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+   
     "server": "nodemon",
     "start": "node index.js"
   },
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/zzzddd/webauth-iii-challenge#readme",
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -31,5 +34,8 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.1",
     "sqlite3": "^4.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
