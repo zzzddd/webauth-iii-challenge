@@ -3,7 +3,7 @@ const router = require("express").Router();
 const Users = require("./usermodule");
 const restricted = require("../auth/restrictedmw");
 
-router.get("/", restricted, checkRole(["department", "sales"]), (req, res) => {
+router.get("/", restricted,  (req, res) => {
   Users.find()
     .then(users => {
       res.json(users);
